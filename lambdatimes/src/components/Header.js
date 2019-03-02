@@ -1,15 +1,20 @@
 import React from 'react';
 
+import {Headerr} from './StyledComponents'
+import {HeaderH1} from './StyledComponents'
+import {HeaderDate} from './StyledComponents'
+import {HeaderTemp} from './StyledComponents'
+
 // Refactor this component to use styled components and not classNames. 
 // You can find the corresponding CSS in the CSS/index.css file
 
 const Header = () => {
   return (
-    <div className="header">
-      <span className="date">SMARCH 32, 2018</span>
-      <h1>Lambda Times</h1>
-      <span className="temp">98°</span>
-    </div>
+    <Headerr>
+      <HeaderDate className="date">MARCH 32, 2018</HeaderDate>
+      <HeaderH1>Lambda Times</HeaderH1>
+      <HeaderTemp className="temp">98°</HeaderTemp>
+    </Headerr>
   )
 }
 
